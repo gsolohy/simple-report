@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>말씀 촬영 Set-up Comparison</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        .column {
+            float: left;
+            width: 45%;
+            padding-left: 30px;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .sm-column {
+            float: left;
+            width: 50%;
+        }
+        .row_moment {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        img.adapter {
+            height: 20%;
+            width: 20%;
+        }
+        img.expected {
+            height: 50%;
+            width: 50%;
+        }
+        img.moment-case {
+            height: 50%;
+            width: 50%;
+        }
+        img.moment-lens {
+            height: 50%;
+            width: 50%;
+        }
+        
+        </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column">
+            <h2>Option 1</h2><hr>
+            <p>기존 보유 중인 Camcorder와 GoPro Jaws Clamp를 활용하여 프로젝터 스탠드에 부착하는 방식</p>
+            <p>* GoPro 대신 Camcorder 부착 할 수 있도록 나사 어댑터를 구매 해야함<br>
+                <a href="https://www.amazon.com/gp/product/B07YTRHG2L/" target="_blank">Link: Adapter $8.99</a><br>
+            </p>
+            <img class="adapter" src="https://images-na.ssl-images-amazon.com/images/I/71s%2BZocsfqL._SX679_.jpg" alt="Adapter"><br>
+            <p>DSLR과 비교한 단점: image quality - 별도의 렌즈가 없고 캠코더의 디지털 줌을 통한 클로즈업으로 zoom-in 화질이 떨어짐</p>
+            <p>DSLR과 비교한 장점: light weight - Tripod 설치 불필요</p>
+            <p><ul> - 고려해야 할 요소 -
+                <li>프로젝터 화면 흔들림 가능성</li>
+                <li>캠코더 배터리 사용 불가 시 파워 연결 필요</li>
+            </ul></p>
+        </div>
+        <div class="column">
+            <h2>Option 2</h2><hr>
+            <p>Option1과 동일한 방식 - 캠코더가 아닌 셀폰을 활용<br>캠코더와 같이 동일한 어댑터 필요<br>단점/장점 DSLR과 비교점 같음</p>
+            <p>Cellphone일 경우 캠코더 보다 디지털 줌의 화질이 더 떨어질 가능성이 높음<br>대비책: 촬영 전용 셀폰을 지정하여 모델에 맞는 셀폰렌즈와 호환 케이스 구입이 가능</p>
+            <p>example model: iPhone X</p>
+            <div class="row_moment">
+                <div class="sm-column">
+                    <img class="moment-case" src="https://images-na.ssl-images-amazon.com/images/I/81S75OTe%2BNL._SX679_.jpg" alt="case">
+                    <p><a href="https://www.amazon.com/dp/B0779MJ16N/" target="_blank">Link: Moment Case $29.99</a></p>
+                </div>
+                <div class="sm-column">
+                    <img class="moment-lens" src="https://images-na.ssl-images-amazon.com/images/I/81MsSVgF71L._SX569_.jpg" alt="tele_lens">
+                    <p><a href="https://www.amazon.com/dp/B07K4T1NG7/" target="_blank">Link: Moment Tele lens $119.99</a></p>
+                </div>
+            </div>
+            <p>Option1 보다 좋은 점
+                <li>전용 렌즈를 통한 화질 보완</li>
+                <li>휴대성 및 다른 앱을 통한 호환성</li>
+            </p>
+        </div>
+    </div><hr>
+    <p><b>설치 후 예상 이미지 Option 1 & 2</b><br>
+        <img class="expected" src="https://tvspro-816a.kxcdn.com/wp-content/uploads/2015/11/ACMPM-001-600x600.jpg" alt="Outcome">
+    </p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.1/d3.min.js"></script>
+    <script src="plots.js"></script>
+</body>
+</html>
